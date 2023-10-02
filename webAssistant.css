@@ -7,9 +7,6 @@ iframe {
 }
 
 /* Enable pointer events for hover on the iframe */
-iframe:hover {
-  pointer-events: auto;
-}
 
 body {
   background-color: #c48f5c;
@@ -26,11 +23,25 @@ body {
   left: 40px;
 }
 
-.spline-watermark {
-  display: none !important;
-  z-index: 0;
+#sleeping-koala {
+  position: absolute;
+  transform: translate(calc(90vw - 100px), calc(90vh - 100px));
+  height: 200px;
+  aspect-ratio: 1/1;
 }
-
-a {
-  display: none !important;
+#wake-me {
+  position: absolute;
+  transform: translate(calc(90vw), calc(20px));
+  /* pointer-events: none; */
+}
+#wake-me-button {
+  padding: 10px;
+  cursor: pointer;
+  /* pointer-events: none; */
+  border: 1px solid black;
+}
+.wake-me-info {
+  display: none;
+}
+.rain {
 }
