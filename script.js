@@ -27,13 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (sleeping) {
       // wake it
       sleepingKoala.src = "/assets/sleeping.png"
-      wakeMeBtn.textContent = "send to bed"
+      wakeMeBtn.textContent = "wake me"
+
       sleeping = false
       console.log("changed to awake")
     } else {
       sleepingKoala.src = "/assets/awake.png"
 
-      wakeMeBtn.textContent = "wake me"
+      wakeMeBtn.textContent = "send to bed"
       sleeping = true
       console.log("changed to sleeping")
     }

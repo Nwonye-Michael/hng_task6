@@ -1,5 +1,7 @@
 iframe {
-  min-height: 100vh;
+  min-height: 50vh;
+  height: 100vh;
+
   pointer-events: none;
 }
 #iframe {
@@ -31,7 +33,9 @@ body {
 }
 #wake-me {
   position: absolute;
-  transform: translate(calc(90vw), calc(20px));
+  transform: translate(calc(90vw), calc(40px));
+  display: flex;
+  flex-direction: column;
   /* pointer-events: none; */
 }
 #wake-me-button {
@@ -39,9 +43,20 @@ body {
   cursor: pointer;
   /* pointer-events: none; */
   border: 1px solid black;
+  width: fit-content;
 }
+/* Initially hide the .wake-me-info element */
 .wake-me-info {
   display: none;
+  transform: translateX(-30%);
+  margin-bottom: 10px;
+  color: #120b48;
 }
+
+/* Show .wake-me-info when #wake-me-button is hovered */
+#wake-me-button:hover + .wake-me-info {
+  display: flex;
+}
+
 .rain {
 }
