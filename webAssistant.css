@@ -1,5 +1,14 @@
 iframe {
   min-height: 100vh;
+  pointer-events: none;
+}
+#iframe {
+  pointer-events: none;
+}
+
+/* Enable pointer events for hover on the iframe */
+iframe:hover {
+  pointer-events: auto;
 }
 
 body {
@@ -9,12 +18,12 @@ body {
 
 .box,
 .assistant {
-  min-height: 20px;
-  min-width: 10px;
+  min-height: 40px;
+  min-width: 40px;
   background-color: blue;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40px;
+  left: 40px;
 }
 
 .spline-watermark {
