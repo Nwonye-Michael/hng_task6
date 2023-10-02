@@ -1,0 +1,27 @@
+iframe {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #c48f5c;
+  overflow: hidden;
+}
+
+.box,
+.assistant {
+  min-height: 20px;
+  min-width: 10px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spline-watermark {
+  display: none !important;
+  z-index: 0;
+}
+
+a {
+  display: none !important;
+}
