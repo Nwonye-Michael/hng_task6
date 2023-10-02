@@ -1,4 +1,4 @@
-let sleeping = true
+let sleeping = false
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the box element
@@ -26,12 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
   wakeMeBtn.addEventListener("click", () => {
     if (sleeping) {
       // wake it
-      sleepingKoala.src = "/assets/awake.png"
+      sleepingKoala.src = "/assets/sleeping.png"
       wakeMeBtn.textContent = "send to bed"
       sleeping = false
       console.log("changed to awake")
     } else {
-      sleepingKoala.src = "/assets/sleeping.png"
+      sleepingKoala.src = "/assets/awake.png"
+
       wakeMeBtn.textContent = "wake me"
       sleeping = true
       console.log("changed to sleeping")
