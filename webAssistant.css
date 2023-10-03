@@ -4,9 +4,6 @@ iframe {
 
   pointer-events: none;
 }
-#iframe {
-  pointer-events: none;
-}
 
 /* Enable pointer events for hover on the iframe */
 
@@ -24,8 +21,16 @@ body {
   top: 40px;
   left: 40px;
 }
-
+.image-container {
+}
 #sleeping-koala {
+  position: absolute;
+  transform: translate(calc(90vw - 100px), calc(90vh - 100px));
+  height: 200px;
+  aspect-ratio: 1/1;
+  /* display: none; */
+}
+#awake-koala {
   position: absolute;
   transform: translate(calc(90vw - 100px), calc(90vh - 100px));
   height: 200px;
@@ -43,7 +48,9 @@ body {
   cursor: pointer;
   /* pointer-events: none; */
   border: 1px solid black;
+  background: transparent;
   width: fit-content;
+  /* display: none; */
 }
 /* Initially hide the .wake-me-info element */
 .wake-me-info {
@@ -58,5 +65,16 @@ body {
   display: flex;
 }
 
+.moon {
+}
+.sun {
+}
 .rain {
+}
+#makeitrainbtn {
+  position: relative;
+  top: 20vh;
+  left: 2vw;
+  padding: 10px;
+  background: transparent;
 }
